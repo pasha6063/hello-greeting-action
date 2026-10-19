@@ -1,0 +1,16 @@
+name: "Friend Greeting"
+description: "Prints a greeting for a supplied name"
+
+inputs:
+  name:
+    description: "Name to greet"
+    required: true
+    default: "World"
+
+outputs:
+  greeting:
+    description: "The greeting that was generated"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
